@@ -178,7 +178,7 @@
             <p class="form-description">Please fill in all required details for player registration</p>
         </header>
         
-        <form class="form-container" action="https://takundac.app.n8n.cloud/webhook-test/c238490f-0848-4384-b513-b0c25c9964de" method="POST">
+        <form class="form-container" id="registerForm" action="https://takundac.app.n8n.cloud/webhook/1edb3949-3253-47e0-b95e-a7244f86323b" method="POST">
             <div class="form-section">
                 <h2 class="section-title">Personal Information</h2>
                 <div class="name-fields">
@@ -369,5 +369,25 @@
             <button type="submit" class="btn">Submit Form</button>
         </form>
     </div>
+
+     <script>
+    document.getElementById('registerForm').addEventListener('submit',
+async function(e) {
+      e.preventDefault();
+
+      const formData = new FormData(e.target);
+      const data = Object.fromEntries(formData.entries());
+
+      await fetch("https://takundac.app.n8n.cloud/webhook/1edb3949-3253-47e0-b95e-a7244f86323b", {
+        method: 'POST',
+      
+      });
+
+      // Redirect after successful submission
+      window.location.href = 'https://nickmutemasango.github.io/Success/';
+    });
+  </script>
+
+
 </body>
 </html>
