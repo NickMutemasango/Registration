@@ -217,6 +217,20 @@
                         <input type="text" id="world_rugby_id" name="world_rugby_id">
                     </div>
                 </div>
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="weight">Weight</label>
+                        <input type="text" id="weight" name="weight" >
+                    </div>
+                    <div class="form-group">
+                        <label for="height">Height</label>
+                        <input type="text" id="height" name="height">
+                    </div>
+                    <div class="form-group">
+                        <label for="height">Yellow Fever Vaccine</label>
+                        <input type="text" id="height" name="height">
+                    </div>
+                </div>
             </div>
             
             <div class="form-section">
@@ -236,6 +250,9 @@
                             <option value="center">Center</option>
                             <option value="winger">Winger</option>
                             <option value="fullback">Fullback</option>
+                            <option value="fullback">Team Mananger</option>
+                            <option value="fullback">Head Coach</option>
+                            <option value="fullback">Team Doctor</option>
                         </select>
                     </div>
                     <div class="form-group">
@@ -252,6 +269,9 @@
                             <option value="center">Center</option>
                             <option value="winger">Winger</option>
                             <option value="fullback">Fullback</option>
+                            <option value="fullback">Team Mananger</option>
+                            <option value="fullback">Head Coach</option>
+                            <option value="fullback">Team Doctor</option>
                         </select>
                     </div>
                     <div class="form-group">
@@ -370,23 +390,7 @@
         </form>
     </div>
 
-     <!-- <script>
-    document.getElementById('registerForm').addEventListener('submit',
-async function(e) {
-      e.preventDefault();
-
-      const formData = new FormData(e.target);
-      const data = Object.fromEntries(formData.entries());
-
-      await fetch("https://takundac.app.n8n.cloud/webhook/1edb3949-3253-47e0-b95e-a7244f86323b", {
-        method: 'POST',
-      
-      });
-
-      // Redirect after successful submission
-      window.location.href = 'https://nickmutemasango.github.io/Success/';
-    });
-  </script> -->
+    
 
 
 </body>
